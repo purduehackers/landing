@@ -1,0 +1,12 @@
+{
+    "name": "ph-landing",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "dependencies": {
+        "bulma": "^0.9.3"
+    },
+    "scripts": {
+        "serve": "python3 -m http.server 8000"
+    }
+}

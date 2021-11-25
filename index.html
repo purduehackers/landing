@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Purdue Hackers</title>
+        <link rel="icon" href="assets/logo.png" />
+
+        <!-- Bulma -->
+        <!-- TODO: In prod, replace with actual prod -->
+
+        <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css" />
+
+        <link
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            rel="stylesheet"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
+            rel="stylesheet"
+        />
+        <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <style>
+            @media (max-width: 500px) {
+                .reverse-columns {
+                    flex-direction: column-reverse;
+                    display: flex;
+                }
+            }
+
+            .titled {
+                font-family: "Merriweather", serif !important;
+                font-size: 58px !important;
+                font-weight: 400 !important;
+                line-height: 64px !important;
+            }
+
+            .subtitled {
+                font-family: "Merriweather", serif !important;
+                font-size: 22px !important;
+                font-weight: 400 !important;
+                line-height: 36px !important;
+            }
+            #colored-dna-back {
+                background: url(../images/colored-dna.svg);
+                background-position: center;
+                background-size: cover;
+                background-color: #212931;
+            }
+        </style> -->
+
+        <style>
+            #about-img {
+                margin-top: 4em;
+                background: url("assets/purdue.svg") no-repeat center;
+                background-size: 130% 130%;
+                height: 200px;
+                width: 100%;
+                border-radius: 100em;
+                max-width: 750px;
+            }
+        </style>
+    </head>
+
+    <body class="has-text-weight-light">
+        <!-- NavBar va a todo lo ancho -->
+        <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="https://purduehackers.com">
+                    <img src="assets/logo.png" />
+                </a>
+            </div>
+
+            <div class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="https://purduehackers.com"> Home </a>
+                    <a class="navbar-item" href="https://events.purduehackers.com"> Events </a>
+                </div>
+            </div>
+        </nav>
+
+        <section class="hero is-light is-fullheight">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <h1 class="title is-1 is-uppercase">purdue hackers</h1>
+                    <h1 class="subtitle is-size-4 is-capitalized">Build - collaborate - grow</h1>
+                    <div id="about-img"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="continer">
+                <div class="columns is-vcentered">
+                    <div class="column">
+                        <h1 class="title is-2 is-capitalized">Who we are</h1>
+                        <p class="block">
+                            We are the largest CS organization on campus. We provide students with a
+                            collaborative platform to build and strengthen technological skills. We
+                            host events with sponsors and peers to grow networks and better serve
+                            members of our community.
+                        </p>
+                    </div>
+                    <div class="column">
+                        <figure class="image">
+                            <img
+                                style="max-height: 550px; width: auto"
+                                class="is-rounded is-clipped"
+                                src="assets/bell tower.svg"
+                            />
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h1 class="title is-2">FAQ</h1>
+
+                <div class="tile is-ancestor">
+                    <div class="tile is-parent">
+                        <div class="tile is-child box">
+                            <h1 class="subtitle is-4">What is hacking?</h1>
+                            <p>
+                                You're probably thinking of movies where hackers steal secrets from
+                                the FBI. That's not what we're about. To us, hacking means using
+                                cutting edge technology to create kick-ass projects.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tile is-parent">
+                        <div class="tile is-child box">
+                            <h1 class="subtitle is-4">I missed the callout! Can I still join?</h1>
+                            <p>
+                                Absolutely! You don’t have to be a Purdue Hackers member to join our
+                                events! Follow our social media and Discord for upcoming events!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tile is-ancestor">
+                    <div class="tile is-parent">
+                        <div class="tile is-child box">
+                            <h1 class="subtitle is-4">
+                                How do I join Purdue Hacker’s organizing team?
+                            </h1>
+                            <p>
+                                We open applications every Fall semester! Stay tuned on Discord for
+                                more information.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tile is-parent">
+                        <div class="tile is-child box">
+                            <h1 class="subtitle is-4">What's up with the logo?</h1>
+                            <p>
+                                It's a glider from Conway's Game of Life. It's a universal symbol
+                                for hacking and was chosen because it's the only pattern in the game
+                                that can spread life to new areas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section has-background-light">
+            <div class="container is-centered has-text-centered">
+                <h1 class="title is-2">Calander</h1>
+                <div>
+                    <iframe
+                        title="Purdue Hackers Calender"
+                        src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffff99&amp;src=purduehackers%40gmail.com&amp;color=%23875509&amp;ctz=America%2FNew_York"
+                        style="border-width: 0px"
+                        scrolling="no"
+                        width="800"
+                        height="600"
+                        frameborder="0"
+                    ></iframe>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
