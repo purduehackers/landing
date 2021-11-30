@@ -9,16 +9,55 @@
         <!-- Bulma -->
         <!-- <link rel="stylesheet" href="../node_modules/bulma/css/bulma.min.css" /> -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+        <script src="https://kit.fontawesome.com/2e8a3c4d79.js" crossorigin="anonymous"></script>
+        <!-- <link rel="stylesheet" href="styles/debug.css"> -->
 
         <style>
-            #about-img {
+            :root {
+                --primary: #F3C316;
+                --secondary-light: #383E42;
+                --secondary-dark: #F5F5F5;
+            }
+            /* #about-img {
                 margin-top: 4em;
+                margin-bottom: 4em;
+                margin-left: 15em;
+                margin-right: 15em;
                 background: url("assets/purdue.svg") no-repeat center;
                 background-size: 130% 130%;
                 height: 200px;
-                width: 100%;
-                border-radius: 100em;
+                width: 75%;
+                border-radius: 10em;
                 max-width: 750px;
+            } */
+
+            @media (max-width: 550px) {
+                .big-container {
+                    display: none;
+                }
+            }
+            @media (min-width: 550px) {
+                .small-container {
+                    display: none;
+                }
+            }
+
+            .responsive-iframe-container {
+                position: relative;
+                padding-bottom: 56.25%;
+                padding-top: 30px;
+                height: 0;
+                overflow: hidden;
+            }
+
+            .responsive-iframe-container iframe,
+            .vresponsive-iframe-container object,
+            .vresponsive-iframe-container embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
             }
         </style>
     </head>
@@ -40,34 +79,17 @@
             </div>
         </nav>
 
-        <section class="hero is-light is-fullheight">
+        <section class="hero is-dark is-fullheight">
             <div class="hero-body">
                 <div class="container has-text-centered">
                     <h1 class="title is-1 is-uppercase">purdue hackers</h1>
-                    <h1 class="subtitle is-size-4 is-capitalized">Build - collaborate - grow</h1>
-                    <div id="about-img"></div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="continer">
-                <div class="columns is-vcentered">
-                    <div class="column">
-                        <h1 class="title is-2 is-capitalized">Who we are</h1>
-                        <p class="block">
-                            We are the largest CS organization on campus. We provide students with a
-                            collaborative platform to build and strengthen technological skills. We
-                            host events with sponsors and peers to grow networks and better serve
-                            members of our community.
-                        </p>
-                    </div>
-                    <div class="column">
-                        <figure class="image">
+                    <div class="subtitle">
+                        <h1 class="is-size-4 is-capitalized">Build - Collaborate - Grow</h1>
+                        <figure class="image is-centered">
                             <img
-                                style="max-height: 550px; width: auto"
+                                style="max-height: 550px; width: 50%; margin-top: 5%; margin-left: 25%; margin-right: 25%;"
                                 class="is-rounded is-clipped"
-                                src="assets/bell tower.svg"
+                                src="assets/purdue.svg"
                             />
                         </figure>
                     </div>
@@ -75,14 +97,45 @@
             </div>
         </section>
 
-        <section class="section">
+        <section class="hero is-light is-fullheight">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+            <div class="continer">
+                <div class="columns is-vcentered">
+                    <div class="column">
+                        <h1 class="title is-2 is-capitalized">Who we are</h1>
+                        <p class="subtitle">
+                            We are the largest CS organization on campus. We provide students with a
+                            collaborative platform to build and strengthen technological skills. We
+                            host events with sponsors and peers to grow networks and better serve
+                            members of our community.
+                        </p>
+                    </div>
+                    <div class="column">
+                        <figure class="image is-centered">
+                            <img
+                                style="max-height: 550px; width: 50%; margin-left: 25%; margin-right: 25%;"
+                                class="is-rounded is-clipped"
+                                src="assets/bell tower.svg"
+                            />
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="hero is-dark is-fullheight">
+            <div class="hero-body">
+                <div class="container has-text-centered">
             <div class="container">
                 <h1 class="title is-2">FAQ</h1>
 
-                <div class="tile is-ancestor">
+                <div class="tile is-ancestor" style="margin-top: 3em;">
                     <div class="tile is-parent">
                         <div class="tile is-child box">
-                            <h1 class="subtitle is-4">What is hacking?</h1>
+                            <h1 class="subtitle is-4" style="color: var(--secondary-light)">What is hacking?</h1>
                             <p>
                                 You're probably thinking of movies where hackers steal secrets from
                                 the FBI. That's not what we're about. To us, hacking means using
@@ -92,7 +145,7 @@
                     </div>
                     <div class="tile is-parent">
                         <div class="tile is-child box">
-                            <h1 class="subtitle is-4">I missed the callout! Can I still join?</h1>
+                            <h1 class="subtitle is-4" style="color: var(--secondary-light)">I missed the callout! Can I still join?</h1>
                             <p>
                                 Absolutely! You don’t have to be a Purdue Hackers member to join our
                                 events! Follow our social media and Discord for upcoming events!
@@ -104,7 +157,7 @@
                 <div class="tile is-ancestor">
                     <div class="tile is-parent">
                         <div class="tile is-child box">
-                            <h1 class="subtitle is-4">
+                            <h1 class="subtitle is-4" style="color: var(--secondary-light)">
                                 How do I join Purdue Hacker’s organizing team?
                             </h1>
                             <p>
@@ -115,7 +168,7 @@
                     </div>
                     <div class="tile is-parent">
                         <div class="tile is-child box">
-                            <h1 class="subtitle is-4">What's up with the logo?</h1>
+                            <h1 class="subtitle is-4" style="color: var(--secondary-light)">What's up with the logo?</h1>
                             <p>
                                 It's a glider from Conway's Game of Life. It's a universal symbol
                                 for hacking and was chosen because it's the only pattern in the game
@@ -125,12 +178,29 @@
                     </div>
                 </div>
             </div>
+            </div>
+            </div>
         </section>
 
-        <section class="section has-background-light">
+        <section class="hero is-light is-fullheight">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <h1 class="title is-2">What's Up?</h1>
+                    <div class="subtitle">
+                        <h1 class="is-size-4" style="margin-top: 2em;">Get instant access to some of the brightest minds and 
+                            technical bad asses that inhabit the midwest.</h1>
+                        <button class="button is-large is-rounded is-warning" style="margin-top: 2em;">Get In Touch!</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hero is-dark is-fullheight">
+            <div class="hero-body">
+                <div class="container has-text-centered">
             <div class="container is-centered has-text-centered">
-                <h1 class="title is-2">Calander</h1>
-                <div>
+                <h1 class="title is-2">Calendar</h1>
+                <div class="responsive-iframe-container big-container">
                     <iframe
                         title="Purdue Hackers Calender"
                         src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffff99&amp;src=purduehackers%40gmail.com&amp;color=%23875509&amp;ctz=America%2FNew_York"
@@ -142,7 +212,31 @@
                         loading="lazy"
                     ></iframe>
                 </div>
+                <div class="responsive-iframe-container small-container">
+                    <iframe
+                        title="Purdue Hackers Calender"
+                        src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffff99&amp;src=purduehackers%40gmail.com&amp;color=%23875509&amp;ctz=America%2FNew_York"
+                        style="border-width: 0px"
+                        scrolling="no"
+                        width="800"
+                        height="600"
+                        frameborder="0"
+                        loading="lazy"
+                    ></iframe>
+                </div>
+            </div>
+            </div>
             </div>
         </section>
+
+        <footer class="footer" style="padding: 3rem 3rem;">
+            <div class="content has-text-centered">
+              <p>
+                Made with <span class="icon"><i class="fas fa-heart" style="color: #E12E4C;"></i></span> and 
+                <span class="icon"><i class="fas fa-coffee" style="color: #8A5415;"></i></span> 
+                by the Purdue Hackers Team.
+              </p>
+            </div>
+          </footer>
     </body>
 </html>
