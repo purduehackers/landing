@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap");
+
+body {
+  background-color: #111115;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+}
+
+.navbar {
+  font-family: "Source Code Pro", monospace;
+}
+
+.nav-link {
+  font-size: 20px;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/test-hero.jpg");
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Source Code Pro", monospace;
+}
+
+.hero-text h1 {
+  font-size: 80px;
+}
+
+.rsvp-button {
+  margin-top: 5%;
+  font-size: 20px;
+}
+
+.about-canvas:hover .about-title h1 {
+  color: #f0ad4e;
+}
+
+.about-title h1 {
+  color: white;
+  font-size: 50px;
+  font-family: "Source Code Pro", monospace;
+  text-align: center;
+}
+
+.about-section {
+  margin-top: 5%;
+  color: white;
+  font-family: "Source Code Pro", monospace;
+}
+
+.about-section h3 {
+  text-align: center;
+}
+
+.about-section ul li {
+  font-size: 20px;
+}
+
+.goal-section:hover h3 {
+  color: #f0ad4e;
+}
+
+.competition-section:hover h3 {
+  color: #f0ad4e;
+}
+
+.social-section:hover h3 {
+  color: #f0ad4e;
+}
+
+.swags-canvas {
+  margin-top: 5%;
+}
+
+.swags-title h1 {
+  color: white;
+  font-size: 50px;
+  font-family: "Source Code Pro", monospace;
+  text-align: center;
+}
+
+.swags-section {
+  margin-top: 3%;
+  color: white;
+  font-family: "Source Code Pro", monospace;
+}
+
+.swags-section ul li {
+  font-size: 20px;
+}
+
+.swags-canvas:hover .swags-title h1 {
+  color: #f0ad4e;
+}
+
+@media screen and (max-width: 510px) {
+  .hero-text h1 {
+    font-size: 60px;
+  }
+
+  .swags-title h1 {
+    color: #f0ad4e;
+  }
+
+  .about-title h1 {
+    color: #f0ad4e;
+  }
+}
