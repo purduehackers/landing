@@ -8,7 +8,7 @@ var subTitle = 'Hammer down, code it up!';
 
 var rsvpIndex = 0;
 var rsvpSpeed = 70;
-var rsvp = 'RSVP Right Now...';
+var rsvp = 'RSVP Right Now !!';
 
 function titleTypeWriter() {
   if (titleIndex < title.length) {

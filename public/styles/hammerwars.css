@@ -109,3 +109,17 @@ body {
 .swags-canvas:hover .swags-title h1 {
   color: #f0ad4e;
 }
+
+@media screen and (max-width: 510px) {
+  .hero-text h1 {
+    font-size: 60px;
+  }
+
+  .swags-title h1 {
+    color: #f0ad4e;
+  }
+
+  .about-title h1 {
+    color: #f0ad4e;
+  }
+}
