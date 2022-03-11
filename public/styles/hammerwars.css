@@ -40,6 +40,10 @@ body {
 }
 
 .hero-text h1 {
+  color: #ffc107;
+}
+
+.hero-text h1 {
   font-size: 80px;
 }
 

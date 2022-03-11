@@ -1,3 +1,11 @@
+var preTitleIndex = 0;
+var preTitleSpeed = 80;
+var preTitle = 'Welcome All Coders!';
+
+var pre2TitleIndex = 0;
+var pre2TitleSpeed = 80;
+var pre2Title = 'Purder Hackers present...';
+
 var titleIndex = 0;
 var titleSpeed = 100;
 var title = 'HammerWars';
@@ -8,7 +16,27 @@ var subTitle = 'Hammer down, code it up!';
 
 var rsvpIndex = 0;
 var rsvpSpeed = 70;
-var rsvp = 'RSVP Right Now !!';
+var rsvp = 'RSVP Right Now !';
+
+function preTitleTypeWriter() {
+  if (preTitleIndex < preTitle.length) {
+    document.getElementById("pre-title").innerHTML += preTitle.charAt(preTitleIndex);
+    preTitleIndex++;
+    setTimeout(preTitleTypeWriter, preTitleSpeed);
+  } else {
+    pre2TitleTypeWriter()
+  }
+}
+
+function pre2TitleTypeWriter() {
+  if (pre2TitleIndex < pre2Title.length) {
+    document.getElementById("pre-2-title").innerHTML += pre2Title.charAt(pre2TitleIndex);
+    pre2TitleIndex++;
+    setTimeout(pre2TitleTypeWriter, pre2TitleSpeed);
+  } else {
+    titleTypeWriter()
+  }
+}
 
 function titleTypeWriter() {
   if (titleIndex < title.length) {
@@ -39,4 +67,4 @@ function rsvpTypeWriter() {
 }
 
 
-window.onload = titleTypeWriter;
+window.onload = preTitleTypeWriter;
