@@ -4,6 +4,15 @@
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 20;
+}
+
+.navbar {
+  font-family: "Source Code Pro", monospace;
+}
+
+.nav-link {
+  font-size: 20px;
 }
 
 .hero-image {
@@ -33,4 +42,19 @@
 .rsvp-button {
   margin-top: 5%;
   font-size: 20px;
+}
+
+.about-canvas {
+  background-color: #111115;
+  height: 800px;
+}
+
+.about {
+}
+
+.about h1 {
+  color: white;
+  font-size: 50px;
+  font-family: "Source Code Pro", monospace;
+  text-align: center;
 }
