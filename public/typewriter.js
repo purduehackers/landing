@@ -38,4 +38,5 @@ function rsvpTypeWriter() {
   }
 }
 
+
 window.onload = titleTypeWriter;

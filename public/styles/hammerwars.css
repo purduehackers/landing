@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap");
 
+body {
+  background-color: #111115;
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -44,17 +48,64 @@
   font-size: 20px;
 }
 
-.about-canvas {
-  background-color: #111115;
-  height: 800px;
+.about-canvas:hover .about-title h1 {
+  color: #f0ad4e;
 }
 
-.about {
-}
-
-.about h1 {
+.about-title h1 {
   color: white;
   font-size: 50px;
   font-family: "Source Code Pro", monospace;
   text-align: center;
+}
+
+.about-section {
+  margin-top: 5%;
+  color: white;
+  font-family: "Source Code Pro", monospace;
+}
+
+.about-section h3 {
+  text-align: center;
+}
+
+.about-section ul li {
+  font-size: 20px;
+}
+
+.goal-section:hover h3 {
+  color: #f0ad4e;
+}
+
+.competition-section:hover h3 {
+  color: #f0ad4e;
+}
+
+.social-section:hover h3 {
+  color: #f0ad4e;
+}
+
+.swags-canvas {
+  margin-top: 5%;
+}
+
+.swags-title h1 {
+  color: white;
+  font-size: 50px;
+  font-family: "Source Code Pro", monospace;
+  text-align: center;
+}
+
+.swags-section {
+  margin-top: 3%;
+  color: white;
+  font-family: "Source Code Pro", monospace;
+}
+
+.swags-section ul li {
+  font-size: 20px;
+}
+
+.swags-canvas:hover .swags-title h1 {
+  color: #f0ad4e;
 }
