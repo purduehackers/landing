@@ -110,6 +110,14 @@ body {
   color: #f0ad4e;
 }
 
+.bg-color-blk {
+  background-color: #111115;
+}
+
+.txt-white {
+  color: white;
+}
+
 @media screen and (max-width: 510px) {
   .hero-text h1 {
     font-size: 60px;
