@@ -56,6 +56,16 @@ body {
   color: #f0ad4e;
 }
 
+.about-intro {
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
 .about-title h1 {
   color: white;
   font-size: 50px;
@@ -120,6 +130,7 @@ body {
 
 .txt-white {
   color: white;
+  font-family: "Source Code Pro", monospace;
 }
 
 @media screen and (max-width: 510px) {
@@ -129,6 +140,10 @@ body {
 
   .swags-title h1 {
     color: #f0ad4e;
+  }
+
+  .about-intro {
+    width: 90%;
   }
 
   .about-title h1 {

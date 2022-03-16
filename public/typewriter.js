@@ -1,10 +1,10 @@
 var preTitleIndex = 0;
 var preTitleSpeed = 80;
-var preTitle = 'Welcome All Coders!';
+var preTitle = 'Calling all coders!';
 
 var pre2TitleIndex = 0;
 var pre2TitleSpeed = 80;
-var pre2Title = 'Purder Hackers present...';
+var pre2Title = 'Purdue Hackers presents...';
 
 var titleIndex = 0;
 var titleSpeed = 100;
@@ -12,11 +12,11 @@ var title = 'HammerWars';
 
 var subTitleIndex = 0;
 var subTitleSpeed = 70;
-var subTitle = 'Hammer down, code it up!';
+var subTitle = 'April 16th, 2022';
 
 var rsvpIndex = 0;
 var rsvpSpeed = 70;
-var rsvp = 'RSVP Right Now !';
+var rsvp = 'RSVP Now!';
 
 function preTitleTypeWriter() {
   if (preTitleIndex < preTitle.length) {
