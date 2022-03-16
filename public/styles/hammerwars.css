@@ -66,6 +66,10 @@ body {
   width: 50%;
 }
 
+.about-intro p {
+  font-size: 20px;
+}
+
 .about-title h1 {
   color: white;
   font-size: 50px;
