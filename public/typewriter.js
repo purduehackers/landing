@@ -4,7 +4,7 @@ var preTitle = 'Welcome All Coders!';
 
 var pre2TitleIndex = 0;
 var pre2TitleSpeed = 80;
-var pre2Title = 'Purdue Hackers present...';
+var pre2Title = 'Purdue Hackers presents...';
 
 var titleIndex = 0;
 var titleSpeed = 100;
@@ -20,7 +20,7 @@ var rsvp = 'RSVP Right Now!';
 
 var explainIndex = 0;
 var explainSpeed = 70;
-var explain = 'A Purdue Hackers Competitive Competition';
+var explain = 'A Purdue Hackers Coding Competition';
 
 var discordIndex = 0;
 var discordSpeed = 70;
