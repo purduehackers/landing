@@ -4,7 +4,7 @@ var preTitle = 'Welcome All Coders!';
 
 var pre2TitleIndex = 0;
 var pre2TitleSpeed = 80;
-var pre2Title = 'Purder Hackers present...';
+var pre2Title = 'Purdue Hackers present...';
 
 var titleIndex = 0;
 var titleSpeed = 100;
@@ -16,7 +16,15 @@ var subTitle = 'Hammer down, code it up!';
 
 var rsvpIndex = 0;
 var rsvpSpeed = 70;
-var rsvp = 'RSVP Right Now !';
+var rsvp = 'RSVP Right Now!';
+
+var explainIndex = 0;
+var explainSpeed = 70;
+var explain = 'A Purdue Hackers Competitive Competition';
+
+var discordIndex = 0;
+var discordSpeed = 70;
+var discord = 'Join our Discord!';
 
 function preTitleTypeWriter() {
   if (preTitleIndex < preTitle.length) {
@@ -54,6 +62,16 @@ function subTitleTypeWriter() {
     subTitleIndex++;
     setTimeout(subTitleTypeWriter, subTitleSpeed);
   } else {
+    explainTypeWriter();
+  }
+}
+
+function explainTypeWriter() {
+  if (explainIndex < explain.length) {
+    document.getElementById("explain").innerHTML += explain.charAt(explainIndex);
+    explainIndex++;
+    setTimeout(explainTypeWriter, explainSpeed);
+  } else {
     rsvpTypeWriter();
   }
 }
@@ -63,8 +81,21 @@ function rsvpTypeWriter() {
     document.getElementById("rsvp").innerHTML += rsvp.charAt(rsvpIndex);
     rsvpIndex++;
     setTimeout(rsvpTypeWriter, rsvpSpeed);
+  } else {
+    discordTypeWriter();
   }
 }
+
+
+function discordTypeWriter() {
+  if (discordIndex < discord.length) {
+    document.getElementById("discord").innerHTML += discord.charAt(discordIndex);
+    discordIndex++;
+    setTimeout(rsvpTypeWriter, discordSpeed);
+  }
+}
+
+
 
 
 window.onload = preTitleTypeWriter;

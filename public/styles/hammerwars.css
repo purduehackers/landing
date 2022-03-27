@@ -52,6 +52,11 @@ body {
   font-size: 20px;
 }
 
+.discord-button {
+  margin-top: 5%;
+  font-size: 20px;
+}
+
 .about-canvas:hover .about-title h1 {
   color: #f0ad4e;
 }
@@ -120,6 +125,15 @@ body {
 
 .txt-white {
   color: white;
+}
+
+.question {
+  text-align: left;
+  font-size: 20px;
+}
+
+.question:hover {
+  color: #f0ad4e;
 }
 
 @media screen and (max-width: 510px) {
