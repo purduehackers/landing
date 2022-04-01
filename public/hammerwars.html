@@ -71,19 +71,31 @@
                 <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#swags">Swags</a>
+                <a class="nav-link" href="#swags">Swag</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
       <div class="hero-text">
+        <h3 id="pre-title"></h3>
+        <h3 id="pre-2-title"></h3>
         <h1 id="title"></h1>
         <h3 id="sub-title"></h3>
-        <button
-          id="rsvp"
-          class="btn btn-warning rounded-pill rsvp-button"
-        ></button>
+        <h5 id="explain"></h3>
+        <a href="https://forms.gle/YnP3sp5kQgmAiYWV8" target="_blank">
+          <button
+            id="rsvp"
+            class="btn btn-warning rounded-pill rsvp-button"
+          ></button>
+        </a>
+        <br>
+        <a href="https://discord.gg/SHcHAUCJhr" target="_blank">
+          <button
+            id="discord"
+            class="btn btn-primary rounded-pill discord-button"
+          ></button>
+        </a>
       </div>
     </div>
     <div class="container-fluid about-canvas" id="about">
@@ -100,10 +112,8 @@
           <h3><u>Goal</u></h3>
           <ul>
             <li>
-              HammerWars programming competition would greatly enhance Purdue CS
-              student's
-              <mark>critical thinking</mark> and
-              <mark>problem solving skills</mark> in a short period of time
+              HammerWars greatly enhances Purdue CS students' <mark>critical thinking</mark> and 
+              <mark>problem-solving skills</mark> in a form of a competition!
             </li>
           </ul>
         </div>
@@ -111,7 +121,7 @@
           <h3><u>Competition</u></h3>
           <ul>
             <li>
-              jumpstart students' knowledge and interest in solving
+              Jumpstart students' knowledge and interest in solving
               <mark>leetcode problems</mark>, which is essential to obtaining
               future internship and job opportunities.
             </li>
@@ -120,8 +130,12 @@
               to be!
             </li>
             <li>
-              <mark>3 levels of difficulty</mark> in the competition, can choose
-              division when arriving at the competition
+              Choose amongst three skill levels!
+              <ul>
+                <li>Beginner</li>
+                <li>Intermediate</li>
+                <li>Advanced</li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -129,11 +143,10 @@
           <h3><u>Social</u></h3>
           <ul>
             <li>
-              Time to socialize with friends and other CS students at the event
+              Network and socialize with other Purdue CS students!
             </li>
             <li>
-              Can send <mark>resumes directly to AWS</mark>, increased chances
-              of getting your resume reviewed
+              Your resumes will be sent to AWS and Deloitte!
             </li>
           </ul>
         </div>
@@ -159,7 +172,7 @@
                   <div class="card">
                     <div class="card-header bg-color-blk" id="headingTwo">
                       <h5 class="mb-0">
-                        <button class="btn bg-color-blk txt-white collapsed items-center" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <button class="btn bg-color-blk txt-white collapsed question" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                           Do I need any experience?
                         </button>
                       </h5>
@@ -174,7 +187,7 @@
                   <div class="card">
                     <div class="card-header bg-color-blk" id="headingThree">
                       <h5 class="mb-0">
-                        <button class="btn bg-color-blk txt-white collapsed items-center" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <button class="btn bg-color-blk txt-white collapsed question" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                           Is this competition limited to only Computer Science majors?
                         </button>
                       </h5>
@@ -185,18 +198,90 @@
                       </div>
                     </div>
                 </li>
+                <li>
+                  <div class="card">
+                    <div class="card-header bg-color-blk" id="headingFour">
+                      <h5 class="mb-0">
+                        <button class="btn bg-color-blk txt-white collapsed question" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          Will Hammer Wars be in-person?
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse bg-color-blk" aria-labelledby="headingFour" data-parent="#accordion">
+                      <div class="card-body">
+                        <mark>Yes!</mark> We are planning on reserving a room for all the competitors on <mark>Saturday, April 16th!</mark>
+                      </div>
+                    </div>
+                </li>
+                <li>
+                  <div class="card">
+                    <div class="card-header bg-color-blk" id="headingFive">
+                      <h5 class="mb-0">
+                        <button class="btn bg-color-blk txt-white collapsed question" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                          Is this a Hackathon?
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseFive" class="collapse bg-color-blk" aria-labelledby="headingFive" data-parent="#accordion">
+                      <div class="card-body">
+                        <mark>Nope,</mark> you will be solving coding interview problems through the CodeForces website. Maybe in another competition.
+                      </div>
+                    </div>
+                </li>
+                <li>
+                  <div class="card">
+                    <div class="card-header bg-color-blk" id="headingSix">
+                      <h5 class="mb-0">
+                        <button class="btn bg-color-blk txt-white collapsed question" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                          How does CodeForces Work?
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseSix" class="collapse bg-color-blk" aria-labelledby="headingSix" data-parent="#accordion">
+                      <div class="card-body">
+                        Right now, we are planning on hosting an <mark>introductory</mark> workshop on how CodeForces works... this will be held on the day-of!
+                      </div>
+                    </div>
+                </li>
+                <li>
+                  <div class="card">
+                    <div class="card-header bg-color-blk" id="headingSeven">
+                      <h5 class="mb-0">
+                        <button class="btn bg-color-blk txt-white collapsed question" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                          Are we able to work in groups?
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseSeven" class="collapse bg-color-blk" aria-labelledby="headingSeven" data-parent="#accordion">
+                      <div class="card-body">
+                        <mark>Nope!</mark> You will tackle programming problems individually.
+                      </div>
+                    </div>
+                </li>
+                <li>
+                  <div class="card">
+                    <div class="card-header bg-color-blk" id="headingEight">
+                      <h5 class="mb-0">
+                        <button class="btn bg-color-blk txt-white collapsed question" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                          I'm not quite sure what level I'm fit for, how can I change that?
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseEight" class="collapse bg-color-blk" aria-labelledby="headingEight" data-parent="#accordion">
+                      <div class="card-body">
+                        Whatever level you've indicated on the registration form does not matter! This is for us to estimate how many people we'll expect per level. 
+                        You will get to choose your level on the day-of the competition!
+                      </div>
+                    </div>
+                </li>
               </ul>
             </div>
             <div class="col-md-4 competition-section">
-              <h3><u>Swags</u></h3>
+              <h3><u>Swag</u></h3>
               <ul>
                 <li>
-                  Free <mark>Purdue Hackers/AWS t-shirt</mark> to first
-                  <mark>100</mark> participants to register!
-                </li>
-                <li>
-                  Free additional cool <mark>HammerWars t-shirt</mark> to
-                  winners
+                  The first 100 participants to register will receive a 
+                  free <mark>Purdue Hackers / Amazon t-shirt</mark>
                 </li>
                 <li>Free <mark>food</mark>!</li>
               </ul>
@@ -209,7 +294,7 @@
                 <li>Introduction to CodeForces</li>
                 <li><mark>AWS</mark> Workshop</li>
                 <li>Coding Time!</li>
-                <li><mark>Deloitte</mark> Workship</li>
+                <li><mark>Deloitte</mark> Workshop</li>
                 <li>Award Ceremony</li>
                 <li>Talk to AWS Representatives</li>
               </ul>
