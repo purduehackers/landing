@@ -147,6 +147,15 @@ body {
   color: #f0ad4e;
 }
 
+.footer {
+  background-color: #24242f;
+  text-align: center;
+  color: white;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
 @media screen and (max-width: 510px) {
   .hero-text h1 {
     font-size: 60px;
